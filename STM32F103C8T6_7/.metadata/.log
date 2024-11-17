@@ -1,0 +1,160 @@
+!SESSION 2024-11-17 13:36:03.254 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-17 13:36:22.850
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-17 13:36:22.861
+!MESSAGE Log4j2 initialized with config file C:\Users\datzi\OneDrive\Máy tính\led7doan\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-17 13:36:25.920
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-17 13:37:30.396
+!MESSAGE Indexed 'LED7_Doan' (17 sources, 78 headers) in 2.67 sec: 3,643 declarations; 13,251 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-17 13:49:37.242
+!MESSAGE Indexed 'LED7_Doan' (19 sources, 78 headers) in 0.969 sec: 3,657 declarations; 13,572 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-17 14:41:25.240
+!MESSAGE Indexed 'LED7_Doan' (20 sources, 118 headers) in 0.828 sec: 2,045 declarations; 12,788 references; 0 unresolved inclusions; 46 syntax errors; 2,434 unresolved names (14%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-17 15:40:19.974
+!MESSAGE Indexed 'led7' (17 sources, 78 headers) in 1.23 sec: 3,643 declarations; 13,251 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-17 15:52:47.116
+!MESSAGE Indexed 'led7' (19 sources, 110 headers) in 1.29 sec: 4,896 declarations; 16,508 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0093%)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2024-11-17 16:03:01.746
+!MESSAGE Error
+!STACK 1
+C Model Exception: Core Exception [code 77] 
+ is an invalid character in resource name '7seg_com_anode.cpp
+cpp
+Copy code
+'.
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:47)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.internal.resources.ResourceException: 
+ is an invalid character in resource name '7seg_com_anode.cpp
+cpp
+Copy code
+'.
+	at org.eclipse.core.internal.resources.Resource.checkValidPath(Resource.java:473)
+	at org.eclipse.core.internal.resources.File.create(File.java:125)
+	at org.eclipse.core.internal.resources.File.create(File.java:202)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	... 7 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 966 2024-11-17 16:03:01.751
+!MESSAGE 
+ is an invalid character in resource name '7seg_com_anode.cpp
+cpp
+Copy code
+'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 
+ is an invalid character in resource name '7seg_com_anode.cpp
+cpp
+Copy code
+'.
+	at org.eclipse.core.internal.resources.Resource.checkValidPath(Resource.java:473)
+	at org.eclipse.core.internal.resources.File.create(File.java:125)
+	at org.eclipse.core.internal.resources.File.create(File.java:202)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2024-11-17 16:03:01.751
+!MESSAGE 
+ is an invalid character in resource name '7seg_com_anode.cpp
+cpp
+Copy code
+'.
+
+!ENTRY org.eclipse.cdt.ui 4 4 2024-11-17 16:03:09.576
+!MESSAGE Error
+!STACK 1
+C Model Exception: Core Exception [code 77] 
+ is an invalid character in resource name '7seg_com_anode.cpp
+'.
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:47)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.internal.resources.ResourceException: 
+ is an invalid character in resource name '7seg_com_anode.cpp
+'.
+	at org.eclipse.core.internal.resources.Resource.checkValidPath(Resource.java:473)
+	at org.eclipse.core.internal.resources.File.create(File.java:125)
+	at org.eclipse.core.internal.resources.File.create(File.java:202)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	... 7 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 966 2024-11-17 16:03:09.577
+!MESSAGE 
+ is an invalid character in resource name '7seg_com_anode.cpp
+'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 
+ is an invalid character in resource name '7seg_com_anode.cpp
+'.
+	at org.eclipse.core.internal.resources.Resource.checkValidPath(Resource.java:473)
+	at org.eclipse.core.internal.resources.File.create(File.java:125)
+	at org.eclipse.core.internal.resources.File.create(File.java:202)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:139)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:117)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:108)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:167)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:43)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard.lambda$1(NewElementWizard.java:88)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1230)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:88)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2024-11-17 16:03:09.577
+!MESSAGE 
+ is an invalid character in resource name '7seg_com_anode.cpp
+'.

@@ -1,0 +1,40 @@
+#include "LED7Segment.h"
+
+// Mảng chứa mã của các số 0-9 cho LED 7 đoạn
+const uint8_t led7SegmentDigits[10] = {
+    0b00111111, // 0
+    0b00000110, // 1
+    0b01011011, // 2
+    0b01001111, // 3
+    0b01100110, // 4
+    0b01101101, // 5
+    0b01111101, // 6
+    0b00000111, // 7
+    0b01111111, // 8
+    0b01101111  // 9
+};
+
+LED7Segment::LED7Segment(PinName pinA, PinName pinB, PinName pinC, PinName pinD, PinName pinE, PinName pinF, PinName pinG)
+    : _a(pinA), _b(pinB), _c(pinC), _d(pinD), _e(pinE), _f(pinF), _g(pinG) {}
+
+void LED7Segment::display(int num) {
+    if (num >= 0 && num <= 9) {
+        displayDigit(num);
+    } else {
+        // Nếu số không hợp lệ, tắt tất cả các LED
+        _a = _b = _c = _d = _e = _f = _g = 0;
+    }
+}
+
+void LED7Segment::displayDigit(int num) {
+    uint8_t segments = led7SegmentDigits[num];
+
+    // Cập nhật các chân tương ứng với các bit trong số cần hiển thị
+    _a = (segments >> 0) & 0x01;
+    _b = (segments >> 1) & 0x01;
+    _c = (segments >> 2) & 0x01;
+    _d = (segments >> 3) & 0x01;
+    _e = (segments >> 4) & 0x01;
+    _f = (segments >> 5) & 0x01;
+    _g = (segments >> 6) & 0x01;
+}
